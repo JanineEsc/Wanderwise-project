@@ -10,6 +10,13 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        timberwolf: '#EDEDED',
+        sage: '#A3B18A',
+        iconColor: '#092C0B',
+        darkGreen: '#0E4411',
+        fernGreen: '#588157',
+        hunterGreen: '#3A5A40',
+        BrunswickGreen: '#344E41',
       },
     },
   },
