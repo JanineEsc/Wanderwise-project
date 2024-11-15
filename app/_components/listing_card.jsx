@@ -29,15 +29,15 @@ export const Listing_card = () => {
 
   
   return (
-    <div>
+    <div className="grid gap-2 ">
       {listings.slice(0,3).map((listing) => (
-        <div key={listing.id} className="w-80 h-52 mx-auto p-4 text-black m-4 gap-2">
-          <img src={listing.images[0].url} alt="house image" className=" w-full h-full object-cover mt-2" />
+        <div key={listing.id} className="w-80 h-52 mx-auto p-4 text-black m-4 gap-3">
+          <img src={listing.images[0].url} alt="house image" className=" w-full h-full object-cover rounded-md shadow-sm mt-2" />
           <div className="">
             <div className="flex items-center justify-between">
               <p>{listing.price}</p>
               <div className="flex">
-                <Star className="h-6 w-6" />
+                <Star className="h-5 w-5" />
                 <p>{listing.rating}</p>
               </div>
             </div>

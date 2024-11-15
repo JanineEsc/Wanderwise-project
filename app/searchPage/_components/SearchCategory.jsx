@@ -3,8 +3,8 @@ export const SearchCategory = () => {
     <div className="flex justify-center items-center">
       <input 
         type="text"
-        placeholder="Guest"
-        className="border-2 text-timberwolf bg-fernGreen mt-5 p-2 rounded-lg w-autov placeholder:text-timberwolf"
+        placeholder="Category"
+        className="border-2 text-timberwolf bg-fernGreen m-2 p-2 rounded-lg w-autov placeholder:text-timberwolf"
       />
     </div>
   )

@@ -5,9 +5,8 @@ import { SearchMobile } from "./_components/SearchMobile"
 
 const LandingPage = () => {
   return (
-    <main className="bg-timberwolf h-screen pt-3">
+    <main className="bg-timberwolf min-h-screen">
       <div className="flex items-center justify-center">
-       <SearchMobile />
       </div>
       <Listing_card />
       <NavbarMobile />

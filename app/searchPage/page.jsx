@@ -1,3 +1,4 @@
+import { Logo } from "./_components/Logo"
 import { SearchCalendar } from "./_components/SearchCalender"
 import { SearchCategory } from "./_components/SearchCategory"
 import { SearchDate } from "./_components/SearchDate"
@@ -7,7 +8,8 @@ import { SearchPrice } from "./_components/SearchPrice"
 
 const searchPage = () => {
   return (
-    <div className="bg-timberwolf min-h-screen">
+    <div className="bg-timberwolf h-screen">
+      <Logo />
       <SearchDestination />
       <SearchGuest />
       <SearchCategory />
