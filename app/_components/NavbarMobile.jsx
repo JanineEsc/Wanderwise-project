@@ -16,7 +16,7 @@ export const NavbarMobile = () => {
   }
 
   return (
-    <div className="flex fixed bottom-0 w-full bg-fernGreen justify-around p-7">
+    <div className="flex fixed bottom-0 w-full bg-fernGreen justify-around text-white p-4 md:hidden">
         <House className="h-8 w-8" />
         <Search className="h-8 w-8" onClick={handleSearhClick} />
         <UserRoundPen className="h-8 w-8"  onClick={handleUserClick} />
