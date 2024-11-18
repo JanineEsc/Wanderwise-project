@@ -2,6 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import AuthContextProvider from "@/components/auth-provider";
+import { BookingProvider } from "@/components/bookingContext";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -14,12 +15,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en" suppressHydrationWarning>
-        <body className={inter.className}>
-          <AuthContextProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <AuthContextProvider>
+          <BookingProvider>
             {children}
-          </AuthContextProvider>
-        </body>
-      </html>
+          </BookingProvider>
+        </AuthContextProvider>
+      </body>
+    </html>
   );
 }
