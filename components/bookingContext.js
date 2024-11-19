@@ -9,8 +9,9 @@ export const BookingProvider = ({ children }) => {
   const [checkOutDate, setCheckOutDate] = useState(null);
   const [contextCategories, setContextCategories] = useState([]);
   const [price, setPrice] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
   const [guestContext, setGuestContext] = useState([]);
-  const [searchTitle, setSearchTitle] = useState("");
+  const [searchTitle, setSearchTitle] = useState("")
 
   const [days, setDays] = useState(0);
   const [sum, setSum] = useState(0);
@@ -39,6 +40,10 @@ export const BookingProvider = ({ children }) => {
         setSearchTitle,
         guestContext,
         setGuestContext,
+        totalPrice,
+        setTotalPrice,
+      
+
       }}
     >
       {children}

@@ -14,6 +14,7 @@ export const SignUp = () => {
   const [lastname, setLastname] = useState("");
   const [phonenumber, setPhonenumber] = useState("");
   const [loading, setLoading] = useState(false);
+  const [location, setLocation] = useState("")
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -23,15 +24,17 @@ export const SignUp = () => {
       const userUid = userCredential.user.uid;
       // Add a new document in DB collection "users" with the user's UID as the document ID
       await setDoc(doc(db, "users", userUid), {
+        uid: userUid,
         firstname,
         lastname,
         email,
         phonenumber,
+        location,
       });
 
-      Toaster.success("Signed in successfully!");
+      toast.success("Signed in successfully!");
     } catch (error) {
-      Toaster.error("Error signing in: " + error.message);
+      toast.error("Error signing in: " + error.message);
     } finally {
       setLoading(false);
     }
@@ -86,6 +89,15 @@ export const SignUp = () => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className="border p-1 rounded-xl text-black"
+            required
+          />
+          <label htmlFor="location">Location:</label>
+          <input
+            type="text"
+            id="location"
+            value={location}
+            onChange={(e) => setLocation (e.target.value)}
             className="border p-1 rounded-xl text-black"
             required
           />

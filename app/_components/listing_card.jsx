@@ -35,7 +35,7 @@ export const Listing_card = () => {
 
 
   return (
-    <div className="grid max-w-72 mx-auto grid-cols-1 gap-2 pt-10 md:grid-cols-2 md:max-w-xl lg:grid-cols-3 lg:max-w-3xl xl:grid-cols-4 xl:max-w-5xl">
+    <div className="grid max-w-72 mx-auto grid-cols-1 gap-2 pt-7 md:grid-cols-2 md:max-w-xl lg:grid-cols-3 lg:max-w-3xl xl:grid-cols-4 xl:max-w-5xl">
       {listings.map((listing) => (
         <div key={listing.id} className="w-full h-full mx-auto text-black">
           <div className="w-full">

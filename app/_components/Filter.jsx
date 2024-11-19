@@ -12,10 +12,14 @@ export const Filter = () => {
   return (
     <div className="grid grid-cols-2 grid-rows-[0.2fr,0.2fr,0.2fr,1fr] border-2 border-BrunswickGreen shadow-xl bg-timberwolf w-1/2 mr-10 mt-2 rounded-lg absolute top-36">
       <p className="col-span-2 p-3 text-center text-lg font-bold text-black">Where are we headed?</p>
-      <SearchDestination />
-      <SearchCategory />
-      <SearchGuest />
-      <SearchPrice />
+      <div className="relative flex justify-between px-2 col-span-2 mx-auto">
+        <SearchDestination />
+        <SearchCategory />
+      </div>
+      <div className="relative flex justify-between px-2 col-span-2 mx-auto">
+        <SearchGuest />
+        <SearchPrice />
+      </div>
       <div className=" col-span-2">
         <SearchCalendar />
       </div>

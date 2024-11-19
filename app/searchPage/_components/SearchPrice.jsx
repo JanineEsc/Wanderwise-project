@@ -23,7 +23,7 @@ export const SearchPrice = () => {
         value={`Price: ${price}`} 
         readOnly
         onClick={handleInputClick}
-        className="border-2 text-timberwolf bg-fernGreen m-2 p-2 rounded-lg w-auto placeholder:text-timberwolf"
+        className="border-2 text-timberwolf bg-fernGreen m-2 p-2 rounded-lg w-full placeholder:text-timberwolf"
       />
       {showSlider && (
         <input 

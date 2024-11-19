@@ -46,13 +46,13 @@ export const SearchCategory = () => {
 
 
   return (
-    <div className="flex justify-center items-center relative">
+    <div className="flex flex-col justify-center items-center">
       <input
         type="text"
         value={inputValue}
         onChange={handleInputChange}
         placeholder="Category"
-        className="border-2 text-timberwolf bg-fernGreen m-2 p-2 rounded-lg w-autov placeholder:text-timberwolf"
+        className="border-2 text-timberwolf bg-fernGreen m-2 p-2 rounded-lg w-full placeholder:text-timberwolf"
       />
       {filteredResults.length > 0 && (
         <div className="absolute top-full mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-lg z-10 text-black">

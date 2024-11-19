@@ -9,8 +9,8 @@ export const SearchButton = () => {
   };
 
   return (
-    <button className="bg-BrunswickGreen p-1 rounded-md w-1/5" onClick={handleSearch}>
-      <p className="text-center text-timberwolf">Search</p>
+    <button className="bg-BrunswickGreen p-1 rounded-md w-60" onClick={handleSearch}>
+      <p className="text-center text-sm text-timberwolf">Search</p>
     </button>
   );
 };

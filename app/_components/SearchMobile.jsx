@@ -28,8 +28,8 @@ export const SearchMobile = () => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="flex justify-center items-center mt-1 w-full gap-2">
+    <div className="flex  flex-col items-center justify-center">
+      <div className="flex p-4 justify-center items-center w-full gap-2">
         <input
           type="text"
           placeholder="Search..."
@@ -38,7 +38,7 @@ export const SearchMobile = () => {
         </input>
         <Settings2
           onClick={handleSettingClick}
-          className="text-BrunswickGreen w-8 h-8 cursor-pointer"
+          className="text-BrunswickGreen w-8 h-8 hidden sm:block cursor-pointer"
         />
       </div>
       <div className="flex justify-center items-center mt-1 w-full gap-2" ref={filterRef}>

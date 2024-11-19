@@ -54,12 +54,12 @@ export const SearchGuest = () => {
   };
 
   return (
-    <div className="relative flex justify-center items-center text-black" ref={dropdownRef}>
-      <div className="flex items-center border-2 text-timberwolf bg-fernGreen m-2 p-2 rounded-lg w-auto">
+    <div className="relative flex flex-col justify-center text-sm items-center text-black" ref={dropdownRef}>
+      <div className="flex items-center border-2 text-timberwolf bg-fernGreen m-2 p-2 rounded-lg w-full">
         <input
           type="text"
           placeholder={`Guests: ${adults} adults ${children} children`}
-          className="bg-fernGreen placeholder:text-timberwolf flex-grow focus:outline-none"
+          className="bg-fernGreen placeholder:text-timberwolf flex-grow w-full focus:outline-none"
           onFocus={handleInputFocus}
           readOnly
         />
