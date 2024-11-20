@@ -17,7 +17,7 @@ const PaySuccessInfo = () => {
       <div className="w-2/3 mx-auto pt-16 grid grid-cols-2 grid-rows-[1fr,1fr,auto] gap-4">
         <div className="flex justify-center col-span-2">
           <Link href="/">
-          <img src="/hej.png" alt="Logo" className="cursor-pointer" />
+          <img src="/hej.jpg" alt="Logo" className="cursor-pointer" />
           </Link>
         </div>
         <div className="col-span-2 mx-auto justify-center items-center inline-flex">
