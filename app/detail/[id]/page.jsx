@@ -88,7 +88,7 @@ const DetailPage = () => {
             )
           ))}
         </div>
-        <div className="col-span-2 flex justify-center border-2 border-BrunswickGreen shadow-xl mx-auto w-11/12 h-20 items-center rounded-lg">
+        <div className="col-span-2 flex justify-center border-2 border-BrunswickGreen shadow-xl mx-auto w-1/2 h-20 items-center rounded-lg">
           <p className="col-span-2 flex justify-center px-5">
             {listing.cancellation_policy}
           </p>
@@ -108,7 +108,7 @@ const DetailPage = () => {
         <div className="col-span-2">
           <DetailBookingInfo listing={listing} />
         </div>
-        <div className="col-span-2 flex mx-auto justify-center items-center w-11/12 md:w-2/3 xl:w-2/4 2xl:w-6/12">
+        <div className="col-span-2 flex mx-auto justify-center p-3 items-center w-11/12 md:w-2/3 xl:w-2/4 2xl:w-6/12">
           <Link className="w-full" href="/pay">
             <button className="bg-BrunswickGreen w-full text-timberwolf px-4 py-2 rounded-2xl">Book Here</button>
           </Link>
